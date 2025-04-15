@@ -10,7 +10,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <HeroUIProvider navigate={router.push}>
-      <ToastProvider placement="top-center" toastProps={{ color: 'primary' }} />
+      <ToastProvider placement="top-center" toastProps={{ color: 'success' }} />
       <ThemeProvider attribute="class" defaultTheme="dark">
         {children}
       </ThemeProvider>
