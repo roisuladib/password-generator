@@ -44,7 +44,7 @@ export default function RootLayout({
       >
         <Providers>
           <div className="relative flex flex-col h-screen">
-            <main className="w-full mx-auto max-w-lg pt-16 px-6 grow">{children}</main>
+            <main className="w-full mx-auto max-w-lg pt-20 px-6 grow">{children}</main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
