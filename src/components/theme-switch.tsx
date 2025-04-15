@@ -30,7 +30,11 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
   const nextTheme = isLight ? 'dark' : 'light';
 
   const handleSetTheme = useCallback(() => {
-    isLight ? playNight() : playLight();
+    if (isLight) {
+      playNight();
+    } else {
+      playLight();
+    }
     setTheme(nextTheme);
   }, [isLight, nextTheme, playLight, playNight, setTheme]);
 
