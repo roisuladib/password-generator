@@ -39,9 +39,7 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    generatePassword();
-  }, []);
+  useEffect(generatePassword, []);
 
   const strength = passwordStrength(result);
   const color = STRENGTH_COLORS[strength.id] ?? 'default';
@@ -79,7 +77,7 @@ export default function Home() {
             <div key={key} className="flex items-center justify-between gap-2">
               <p className="text-small">{label}</p>
               <Switch
-                isSelected={Boolean(parse ? parse(options[key]) : options[key])}
+                isSelected={Boolean(parse ? parse(options[key] as boolean | string) : options[key])}
                 onValueChange={value => setOptions(prev => ({ ...prev, [key]: value }))}
               />
             </div>

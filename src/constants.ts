@@ -7,7 +7,7 @@ type ToggleKey = 'lowercase' | 'uppercase' | 'numbers' | 'symbols';
 interface ToggleOption {
    key: ToggleKey;
    label: string;
-   parse?: (value: any) => boolean;
+   parse?: (value: boolean | string) => boolean;
  }
 
 export const TOGGLES: ToggleOption[] = [
