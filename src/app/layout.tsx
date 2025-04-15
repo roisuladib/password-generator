@@ -49,7 +49,7 @@ export default function RootLayout({
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://heroui.com?utm_source=next-app-template"
+                href="https://github.com/roisuladib/password-generator"
                 title="heroui.com homepage"
               >
                 <span className="text-default-600">Powered by</span>
