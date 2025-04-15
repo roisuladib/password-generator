@@ -1,0 +1,41 @@
+{
+  "name": "password-generator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroui/button": "^2.2.17",
+    "@heroui/card": "^2.2.16",
+    "@heroui/link": "^2.2.14",
+    "@heroui/number-input": "^2.0.7",
+    "@heroui/switch": "^2.2.15",
+    "@heroui/system": "^2.4.13",
+    "@heroui/theme": "^2.4.13",
+    "@heroui/toast": "^2.0.7",
+    "@react-aria/ssr": "^3.9.8",
+    "@react-aria/visually-hidden": "^3.8.22",
+    "framer-motion": "^12.7.2",
+    "generate-password": "^1.7.1",
+    "next": "^15.3.0",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "use-sound": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "^15.3.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+  }
+}
