@@ -14,7 +14,6 @@ import { cn } from '@heroui/theme';
 import { addToast } from '@heroui/toast';
 
 export default function Home() {
-  const [result, setResult] = useState('');
   const [options, setOptions] = useState<GenerateOptions>({
     length: 8,
     lowercase: true,
@@ -22,6 +21,7 @@ export default function Home() {
     numbers: false,
     symbols: false,
   });
+  const [result, setResult] = useState(generator.generate(options));
 
   const handleGeneratePassword = () => {
     try {
